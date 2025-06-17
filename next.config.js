@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: '/Portfolio',  // Le chemin de ton site sur GitHub Pages
-    assetPrefix: '/Portfolio', // Cela garantit que les assets sont chargés correctement
-    output: 'export',
-    distDir: 'out',
+    output: 'export',  // Générer un site statique
+    distDir: 'out',    // Dossier de sortie pour les fichiers exportés
+    images: {
+      unoptimized: true,  // Désactive l'optimisation des images
+    },
   };
   
   module.exports = nextConfig;
